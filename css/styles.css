@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    /* border: 1px red solid; */
+}
+
+table, tl, th, td, tr, thead {
+    border: black 1px double;
+    padding: 2px;
+}
+
+tr {
+    background-color: rgba(0, 172, 172, 0.425)
+}
+tbody tr:not(:first-child) {
+    background-color: white;
+}
+
+
+tbody td {
+    
+    transition: 200ms;
+    transition-delay: 0.05s;
+}
+
+tbody tr:not(:first-child) td:hover {
+    background-color: rgb(255, 255, 199);
+    
+}
+
+tbody tr:first-child {
+    background-color: red;
+}
+
+
+body * {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    margin: 10px auto;
+    width: 90%;
+    max-width: 650px;
+    display: grid;
+    padding: 18px;
+    background-color: aqua;
+    border: 6px black double;
+}
+
+header *, main *:not(button, input){ 
+    margin: auto;
+}
+
+main { 
+    background-color: aqua;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 650px;
+    display: grid;
+    padding: 18px;
+    gap: 25px;
+    border: 6px black double;
+}
+
+button {
+    border: 2px black solid;
+    padding: 2px;
+    background-color: rgba(0, 172, 172, 0.425);
+    transition: 0.1s;
+}
+
+
+button:hover {
+    padding-inline: 3px;
+    background-color: rgb(153, 255, 255);
+}
+
+.input { 
+    display: grid;
+    gap: 4px
+}
+
+
+.textArea {
+    border: black 1px dashed;
+    background-color: white;
+    padding: 10px;
+}
+
+.result * {
+   text-align: center;
+}
+
